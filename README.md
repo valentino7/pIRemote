@@ -73,4 +73,7 @@ remember to change `/dev/lirc1` with your actual receiver
 ## To send a button:
 `ir-ctl --send=button.txt`
 
+## IFTTT:
+viene utilizzato l'account di ifttt per creare un collegaremento if-else con alexa. Viene quindi scelto il comando vocale che innesca l'applet e poi la chiamata a Webhook che si occupa di chiamare l'applicazione python che sta girando su raspberry. E' possibile usare l'indirizzo ip del modem impostando un portforwarding nelle impostazioni del modem stesso. Viene usata una chiamata di tipo Post sulla risorsa "/object" con un json di chiave "obj" e valore "acceso".
+
 
